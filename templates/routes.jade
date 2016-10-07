@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+
+  body
+    ul
+      for route in routes
+        li
+          | #{route.path}
+          strong  #{route.method} --
+          |  #{route.description}: #{route.notes}
+
